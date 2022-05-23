@@ -1,0 +1,24 @@
+nav{
+    background-color: deepskyblue;
+    padding: 10px;
+}
+ul{
+    text-align: center;
+    list-style-type: none;
+}
+
+ul li {
+    display: inline-block;
+    font-weight:bold;
+    padding: 10px;
+
+}
+li a{
+    color: aliceblue;
+    
+    text-decoration: none;
+}
+
+nav img{
+    border-radius: 10%;
+}

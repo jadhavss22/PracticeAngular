@@ -1,0 +1,25 @@
+<!-- <router-outlet></router-outlet> -->
+<app-header></app-header>
+            <!--  Events  -->
+    <div class="container">
+<!-- <button (click)="getData('myEvents')">Click here</button><br> -->
+
+<!-- This is when you press key box value in console get incremented o/p: box(number of keys you pressed) -->
+    <input type="text" (keyup)="getData('box')" placeholder="enter text" /><br><br>
+
+<!-- This is when you pass value in input box console get reflected -->
+    <input #box type="text" (input)="gettext(box.value)" placeholder="enter text"><br><br>
+
+            <!-- Counter -->
+    <button (click)="counter('minus')">--</button>
+    <p>Count : {{count}}</p>
+    <button (click)="counter('add')">++</button><br><br>
+
+    <!-- Property Binding -->
+    <input type="text" name="user-name" value="{{data}}" [disabled]=disable><br><br>
+     <!--Interpolation  -->
+<input type="text" name="user-name" value="{{data}}" disabled={{disable}}> 
+
+
+
+</div>
